@@ -1,2 +1,4 @@
+.gitignore
+*.tar.gz
 tictactoe
 adnan_maleskic_sp_zadaca1/duration/tests
