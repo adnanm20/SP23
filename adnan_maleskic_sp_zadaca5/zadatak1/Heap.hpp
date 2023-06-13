@@ -38,7 +38,7 @@ Heap<T>::Heap(const Heap<T>& o) : capacity_{o.capacity_}, size_{o.size_}, elemen
   std::copy(o.elements_, o.elements_+o.size_, elements_);
 }
 template<typename T>
-Heap<T>::Heap(Heap<T>&& o) : capacity_{10}, size_{0}, elements_{o.elements_} {
+Heap<T>::Heap(Heap<T>&& o) : capacity_{o.capacity_}, size_{o.size_}, elements_{o.elements_} {
   o.capacity_ = 0;
   o.size_ = 0;
   o.elements_ = nullptr;
